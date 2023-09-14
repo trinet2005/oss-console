@@ -1,4 +1,4 @@
-module github.com/trinet/oss-console
+module github.com/trinet2005/oss-console
 
 go 1.20
 
