@@ -19,12 +19,11 @@ package restapi
 import (
 	"context"
 	"errors"
+	madmin "github.com/trinet2005/oss-admin-go"
+	minio "github.com/trinet2005/oss-go-sdk"
 	"strings"
 
-	"github.com/minio/minio-go/v7"
-
-	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
+	"github.com/trinet2005/oss-console/models"
 )
 
 var (

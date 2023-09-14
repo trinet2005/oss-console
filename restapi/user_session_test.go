@@ -22,12 +22,12 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/trinet2005/oss-console/pkg/utils"
 
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth/idp/oauth2"
-	"github.com/minio/console/pkg/auth/ldap"
 	"github.com/stretchr/testify/assert"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/pkg/auth/idp/oauth2"
+	"github.com/trinet2005/oss-console/pkg/auth/ldap"
 )
 
 func Test_getSessionResponse(t *testing.T) {

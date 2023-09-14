@@ -17,7 +17,7 @@
 package config
 
 import (
-	"github.com/minio/madmin-go/v3"
+	"github.com/trinet2005/oss-admin-go"
 )
 
 // Default keys

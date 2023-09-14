@@ -23,10 +23,10 @@ import (
 
 	"github.com/dustin/go-humanize"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	tieringApi "github.com/minio/console/restapi/operations/tiering"
-	"github.com/minio/madmin-go/v3"
+	"github.com/trinet2005/oss-admin-go"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/restapi/operations"
+	tieringApi "github.com/trinet2005/oss-console/restapi/operations/tiering"
 )
 
 func registerAdminTiersHandlers(api *operations.ConsoleAPI) {

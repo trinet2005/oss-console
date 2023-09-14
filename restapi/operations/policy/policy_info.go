@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/minio/console/models"
+	"github.com/trinet2005/oss-console/models"
 )
 
 // PolicyInfoHandlerFunc turns a function with the right signature into a policy info handler

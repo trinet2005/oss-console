@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/minio/console/models"
-	tieringApi "github.com/minio/console/restapi/operations/tiering"
-	"github.com/minio/madmin-go/v3"
 	"github.com/stretchr/testify/assert"
+	"github.com/trinet2005/oss-admin-go"
+	"github.com/trinet2005/oss-console/models"
+	tieringApi "github.com/trinet2005/oss-console/restapi/operations/tiering"
 )
 
 func TestGetTiers(t *testing.T) {

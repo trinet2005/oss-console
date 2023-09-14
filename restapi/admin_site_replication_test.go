@@ -23,8 +23,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/minio/madmin-go/v3"
 	"github.com/stretchr/testify/assert"
+	"github.com/trinet2005/oss-admin-go"
 )
 
 func TestGetSiteReplicationInfo(t *testing.T) {

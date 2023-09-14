@@ -23,20 +23,20 @@ import (
 	"strconv"
 	"time"
 
-	policies "github.com/minio/console/restapi/policy"
-	"github.com/minio/madmin-go/v3"
+	"github.com/trinet2005/oss-admin-go"
+	policies "github.com/trinet2005/oss-console/restapi/policy"
 
 	jwtgo "github.com/golang-jwt/jwt/v4"
-	"github.com/minio/pkg/v2/policy/condition"
+	"github.com/trinet2005/oss-pkg/policy/condition"
 
-	minioIAMPolicy "github.com/minio/pkg/v2/policy"
+	minioIAMPolicy "github.com/trinet2005/oss-pkg/policy"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth/idp/oauth2"
-	"github.com/minio/console/pkg/auth/ldap"
-	"github.com/minio/console/restapi/operations"
-	authApi "github.com/minio/console/restapi/operations/auth"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/pkg/auth/idp/oauth2"
+	"github.com/trinet2005/oss-console/pkg/auth/ldap"
+	"github.com/trinet2005/oss-console/restapi/operations"
+	authApi "github.com/trinet2005/oss-console/restapi/operations/auth"
 )
 
 type Conditions struct {

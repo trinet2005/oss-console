@@ -27,13 +27,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/trinet2005/oss-console/pkg/utils"
 
 	"github.com/klauspost/compress/gzip"
-	xhttp "github.com/minio/console/pkg/http"
-	subnet "github.com/minio/console/pkg/subnet"
-	"github.com/minio/madmin-go/v3"
 	"github.com/minio/websocket"
+	"github.com/trinet2005/oss-admin-go"
+	xhttp "github.com/trinet2005/oss-console/pkg/http"
+	subnet "github.com/trinet2005/oss-console/pkg/subnet"
 )
 
 // startHealthInfo starts fetching mc.ServerHealthInfo and

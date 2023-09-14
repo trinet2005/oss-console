@@ -24,10 +24,10 @@ import (
 	"time"
 
 	"github.com/minio/cli"
-	"github.com/minio/console/pkg"
-	"github.com/minio/pkg/v2/console"
-	"github.com/minio/pkg/v2/trie"
-	"github.com/minio/pkg/v2/words"
+	"github.com/trinet2005/oss-console/pkg"
+	"github.com/trinet2005/oss-pkg/console"
+	"github.com/trinet2005/oss-pkg/trie"
+	"github.com/trinet2005/oss-pkg/words"
 )
 
 // Help template for Console.

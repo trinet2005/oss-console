@@ -24,17 +24,17 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/minio/console/pkg/utils"
-	bucketApi "github.com/minio/console/restapi/operations/bucket"
-	policyApi "github.com/minio/console/restapi/operations/policy"
-	s3 "github.com/minio/minio-go/v7"
+	"github.com/trinet2005/oss-console/pkg/utils"
+	bucketApi "github.com/trinet2005/oss-console/restapi/operations/bucket"
+	policyApi "github.com/trinet2005/oss-console/restapi/operations/policy"
+	s3 "github.com/trinet2005/oss-go-sdk"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	iampolicy "github.com/minio/pkg/v2/policy"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/restapi/operations"
+	iampolicy "github.com/trinet2005/oss-pkg/policy"
 
-	policies "github.com/minio/console/restapi/policy"
+	policies "github.com/trinet2005/oss-console/restapi/policy"
 )
 
 func registersPoliciesHandler(api *operations.ConsoleAPI) {

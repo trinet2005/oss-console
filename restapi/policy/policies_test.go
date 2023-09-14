@@ -21,8 +21,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/minio/madmin-go/v3"
-	minioIAMPolicy "github.com/minio/pkg/v2/policy"
+	"github.com/trinet2005/oss-admin-go"
+	minioIAMPolicy "github.com/trinet2005/oss-pkg/policy"
 )
 
 func TestReplacePolicyVariables(t *testing.T) {

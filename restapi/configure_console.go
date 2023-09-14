@@ -35,22 +35,22 @@ import (
 	"sync"
 	"time"
 
-	"github.com/minio/console/pkg/logger"
-	"github.com/minio/console/pkg/utils"
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/trinet2005/oss-console/pkg/logger"
+	"github.com/trinet2005/oss-console/pkg/utils"
+	"github.com/trinet2005/oss-go-sdk/pkg/credentials"
 
 	"github.com/klauspost/compress/gzhttp"
 
-	portal_ui "github.com/minio/console/portal-ui"
-	"github.com/minio/pkg/v2/env"
-	"github.com/minio/pkg/v2/mimedb"
-	xnet "github.com/minio/pkg/v2/net"
+	portal_ui "github.com/trinet2005/oss-console/portal-ui"
+	"github.com/trinet2005/oss-pkg/env"
+	"github.com/trinet2005/oss-pkg/mimedb"
+	xnet "github.com/trinet2005/oss-pkg/net"
 
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth"
-	"github.com/minio/console/restapi/operations"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/pkg/auth"
+	"github.com/trinet2005/oss-console/restapi/operations"
 	"github.com/unrolled/secure"
 )
 

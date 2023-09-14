@@ -28,11 +28,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/minio-go/v7/pkg/credentials"
-	"github.com/minio/minio-go/v7/pkg/set"
+	"github.com/trinet2005/oss-go-sdk/pkg/credentials"
+	"github.com/trinet2005/oss-go-sdk/pkg/set"
 
-	"github.com/minio/console/pkg/auth/token"
-	"github.com/minio/console/pkg/auth/utils"
+	"github.com/trinet2005/oss-console/pkg/auth/token"
+	"github.com/trinet2005/oss-console/pkg/auth/utils"
 	"golang.org/x/crypto/pbkdf2"
 	"golang.org/x/oauth2"
 	xoauth2 "golang.org/x/oauth2"

@@ -21,6 +21,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	minio "github.com/trinet2005/oss-go-sdk"
 	"io"
 	"net/http"
 	"path/filepath"
@@ -29,15 +30,14 @@ import (
 	"time"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/restapi/operations/object"
+	"github.com/trinet2005/oss-console/restapi/operations/object"
 
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
-	mc "github.com/minio/mc/cmd"
-	"github.com/minio/mc/pkg/probe"
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/tags"
 	"github.com/stretchr/testify/assert"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-go-sdk/pkg/tags"
+	mc "github.com/trinet2005/oss-mc/cmd"
+	"github.com/trinet2005/oss-mc/pkg/probe"
 )
 
 var (

@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/minio/console/models"
 	"github.com/stretchr/testify/assert"
+	"github.com/trinet2005/oss-console/models"
 )
 
 func TestError(t *testing.T) {

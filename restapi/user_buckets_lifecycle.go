@@ -20,22 +20,21 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	minio "github.com/trinet2005/oss-go-sdk"
 	"strconv"
 	"strings"
 	"time"
 
-	"github.com/minio/minio-go/v7"
-
 	"github.com/rs/xid"
 
-	"github.com/minio/mc/cmd/ilm"
+	"github.com/trinet2005/oss-mc/cmd/ilm"
 
-	"github.com/minio/minio-go/v7/pkg/lifecycle"
+	"github.com/trinet2005/oss-go-sdk/pkg/lifecycle"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	bucketApi "github.com/minio/console/restapi/operations/bucket"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/restapi/operations"
+	bucketApi "github.com/trinet2005/oss-console/restapi/operations/bucket"
 )
 
 type MultiLifecycleResult struct {

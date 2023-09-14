@@ -25,9 +25,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/minio/console/models"
-	iampolicy "github.com/minio/pkg/v2/policy"
 	"github.com/stretchr/testify/assert"
+	"github.com/trinet2005/oss-console/models"
+	iampolicy "github.com/trinet2005/oss-pkg/policy"
 )
 
 func TestListPolicies(t *testing.T) {

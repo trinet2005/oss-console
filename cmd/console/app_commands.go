@@ -22,10 +22,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/minio/console/pkg/logger"
+	"github.com/trinet2005/oss-console/pkg/logger"
 
 	"github.com/minio/cli"
-	"github.com/minio/console/restapi"
+	"github.com/trinet2005/oss-console/restapi"
 )
 
 var appCmds = []cli.Command{

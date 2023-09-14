@@ -19,10 +19,9 @@ package restapi
 import (
 	"context"
 	"encoding/base64"
+	minio "github.com/trinet2005/oss-go-sdk"
+	"github.com/trinet2005/oss-mc/cmd"
 	"time"
-
-	"github.com/minio/mc/cmd"
-	"github.com/minio/minio-go/v7"
 )
 
 type objectsListOpts struct {

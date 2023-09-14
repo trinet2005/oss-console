@@ -19,8 +19,8 @@ package auth
 import (
 	"testing"
 
-	"github.com/minio/minio-go/v7/pkg/credentials"
 	"github.com/stretchr/testify/assert"
+	"github.com/trinet2005/oss-go-sdk/pkg/credentials"
 )
 
 var creds = &credentials.Value{

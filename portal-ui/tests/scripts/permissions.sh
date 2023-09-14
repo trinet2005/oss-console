@@ -85,7 +85,7 @@ __init__() {
   export GOPATH=/tmp/gopath
   export PATH=${PATH}:${GOPATH}/bin
 
-  go install github.com/minio/mc@latest
+  go install github.com/trinet2005/oss-mc@latest
 
   add_alias
 

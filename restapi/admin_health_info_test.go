@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	madmin "github.com/minio/madmin-go/v3"
+	madmin "github.com/trinet2005/oss-admin-go"
 )
 
 func Test_serverHealthInfo(t *testing.T) {

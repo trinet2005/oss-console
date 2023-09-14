@@ -21,9 +21,9 @@ import (
 	"testing"
 	"time"
 
-	mc "github.com/minio/mc/cmd"
-	"github.com/minio/minio-go/v7"
 	"github.com/stretchr/testify/assert"
+	minio "github.com/trinet2005/oss-go-sdk"
+	mc "github.com/trinet2005/oss-mc/cmd"
 )
 
 func TestWSRewindObjects(t *testing.T) {

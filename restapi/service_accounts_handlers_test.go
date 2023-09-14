@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/minio/madmin-go/v3"
-	iampolicy "github.com/minio/pkg/v2/policy"
 	"github.com/stretchr/testify/assert"
+	"github.com/trinet2005/oss-admin-go"
+	iampolicy "github.com/trinet2005/oss-pkg/policy"
 )
 
 func TestAddServiceAccount(t *testing.T) {
