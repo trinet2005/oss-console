@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/minio/console/models"
+	"github.com/trinet2005/oss-console/models"
 )
 
 // ListAUserServiceAccountsOKCode is the HTTP code returned for type ListAUserServiceAccountsOK

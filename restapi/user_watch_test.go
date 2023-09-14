@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	mc "github.com/minio/mc/cmd"
-	"github.com/minio/mc/pkg/probe"
 	"github.com/stretchr/testify/assert"
+	mc "github.com/trinet2005/oss-mc/cmd"
+	"github.com/trinet2005/oss-mc/pkg/probe"
 )
 
 // assigning mock at runtime instead of compile time

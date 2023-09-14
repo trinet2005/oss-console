@@ -22,25 +22,24 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	madmin "github.com/trinet2005/oss-admin-go"
+	minio "github.com/trinet2005/oss-go-sdk"
 	"strings"
 	"time"
 
-	"github.com/minio/minio-go/v7"
-
-	"github.com/minio/madmin-go/v3"
-	"github.com/minio/mc/cmd"
-	"github.com/minio/mc/pkg/probe"
-	"github.com/minio/minio-go/v7/pkg/sse"
-	"github.com/minio/minio-go/v7/pkg/tags"
+	"github.com/trinet2005/oss-go-sdk/pkg/sse"
+	"github.com/trinet2005/oss-go-sdk/pkg/tags"
+	"github.com/trinet2005/oss-mc/cmd"
+	"github.com/trinet2005/oss-mc/pkg/probe"
 
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	bucketApi "github.com/minio/console/restapi/operations/bucket"
-	"github.com/minio/minio-go/v7/pkg/policy"
-	"github.com/minio/minio-go/v7/pkg/replication"
-	minioIAMPolicy "github.com/minio/pkg/v2/policy"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/restapi/operations"
+	bucketApi "github.com/trinet2005/oss-console/restapi/operations/bucket"
+	"github.com/trinet2005/oss-go-sdk/pkg/policy"
+	"github.com/trinet2005/oss-go-sdk/pkg/replication"
+	minioIAMPolicy "github.com/trinet2005/oss-pkg/policy"
 )
 
 func registerBucketsHandlers(api *operations.ConsoleAPI) {

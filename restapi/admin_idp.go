@@ -23,10 +23,10 @@ import (
 	"time"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	"github.com/minio/console/restapi/operations/idp"
-	"github.com/minio/madmin-go/v3"
+	"github.com/trinet2005/oss-admin-go"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/restapi/operations"
+	"github.com/trinet2005/oss-console/restapi/operations/idp"
 )
 
 var errInvalidIDPType = fmt.Errorf("IDP type must be one of %v", madmin.ValidIDPConfigTypes)

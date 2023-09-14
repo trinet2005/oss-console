@@ -41,7 +41,7 @@ import (
 	flags "github.com/jessevdk/go-flags"
 	"golang.org/x/net/netutil"
 
-	"github.com/minio/console/restapi/operations"
+	"github.com/trinet2005/oss-console/restapi/operations"
 )
 
 const (

@@ -28,8 +28,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/minio/console/models"
 	"github.com/stretchr/testify/assert"
+	"github.com/trinet2005/oss-console/models"
 )
 
 const apiURL = "http://localhost:9090/api/v1/admin/site-replication"

@@ -23,9 +23,9 @@ import (
 	"testing"
 
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
 	"github.com/stretchr/testify/assert"
+	"github.com/trinet2005/oss-admin-go"
+	"github.com/trinet2005/oss-console/models"
 )
 
 func TestListGroups(t *testing.T) {

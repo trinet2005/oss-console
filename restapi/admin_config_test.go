@@ -27,8 +27,8 @@ import (
 	"github.com/go-openapi/swag"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
+	"github.com/trinet2005/oss-admin-go"
+	"github.com/trinet2005/oss-console/models"
 )
 
 const (

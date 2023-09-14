@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/minio/pkg/v2/ellipses"
+	"github.com/trinet2005/oss-pkg/ellipses"
 )
 
 // This file implements and supports ellipses pattern for

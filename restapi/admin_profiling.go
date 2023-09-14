@@ -21,9 +21,9 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
 	"github.com/minio/websocket"
+	"github.com/trinet2005/oss-admin-go"
+	"github.com/trinet2005/oss-console/models"
 )
 
 var items []*models.StartProfilingItem

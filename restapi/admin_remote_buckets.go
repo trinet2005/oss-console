@@ -24,16 +24,16 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/trinet2005/oss-console/pkg/utils"
 
-	"github.com/minio/madmin-go/v3"
+	"github.com/trinet2005/oss-admin-go"
 
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	bucketApi "github.com/minio/console/restapi/operations/bucket"
-	"github.com/minio/minio-go/v7/pkg/replication"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/restapi/operations"
+	bucketApi "github.com/trinet2005/oss-console/restapi/operations/bucket"
+	"github.com/trinet2005/oss-go-sdk/pkg/replication"
 )
 
 type RemoteBucketResult struct {

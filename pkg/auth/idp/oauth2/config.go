@@ -24,8 +24,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/console/pkg/auth/token"
-	"github.com/minio/pkg/v2/env"
+	"github.com/trinet2005/oss-console/pkg/auth/token"
+	"github.com/trinet2005/oss-pkg/env"
 	"golang.org/x/crypto/pbkdf2"
 )
 

@@ -22,10 +22,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/minio/console/pkg/auth/idp/oauth2"
-	xcerts "github.com/minio/pkg/v2/certs"
-	"github.com/minio/pkg/v2/env"
-	xnet "github.com/minio/pkg/v2/net"
+	"github.com/trinet2005/oss-console/pkg/auth/idp/oauth2"
+	xcerts "github.com/trinet2005/oss-pkg/certs"
+	"github.com/trinet2005/oss-pkg/env"
+	xnet "github.com/trinet2005/oss-pkg/net"
 )
 
 var (

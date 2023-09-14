@@ -19,19 +19,18 @@ package restapi
 import (
 	"context"
 	"errors"
+	madmin "github.com/trinet2005/oss-admin-go"
 	"reflect"
 	"testing"
 
 	xoauth2 "golang.org/x/oauth2"
 
-	"github.com/minio/madmin-go/v3"
+	iampolicy "github.com/trinet2005/oss-pkg/policy"
 
-	iampolicy "github.com/minio/pkg/v2/policy"
+	"github.com/trinet2005/oss-console/pkg/auth"
 
-	"github.com/minio/console/pkg/auth"
-
-	"github.com/minio/minio-go/v7/pkg/credentials"
 	"github.com/stretchr/testify/assert"
+	"github.com/trinet2005/oss-go-sdk/pkg/credentials"
 )
 
 // Define a mock struct of ConsoleCredentialsI interface implementation

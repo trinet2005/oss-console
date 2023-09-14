@@ -26,8 +26,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/madmin-go/v3"
 	"github.com/minio/websocket"
+	"github.com/trinet2005/oss-admin-go"
 )
 
 // An alias of string to represent the health color code of an object

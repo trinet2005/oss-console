@@ -28,12 +28,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/trinet2005/oss-console/pkg/utils"
 
-	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
-	"github.com/minio/minio-go/v7/pkg/credentials"
-	iampolicy "github.com/minio/pkg/v2/policy"
+	"github.com/trinet2005/oss-admin-go"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-go-sdk/pkg/credentials"
+	iampolicy "github.com/trinet2005/oss-pkg/policy"
 )
 
 const globalAppName = "MinIO Console"

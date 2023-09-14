@@ -20,20 +20,20 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	madmin "github.com/trinet2005/oss-admin-go"
+	minio "github.com/trinet2005/oss-go-sdk"
 	"reflect"
 	"testing"
 	"time"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/trinet2005/oss-console/pkg/utils"
 
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
-	"github.com/minio/mc/pkg/probe"
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/sse"
-	"github.com/minio/minio-go/v7/pkg/tags"
 	"github.com/stretchr/testify/assert"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-go-sdk/pkg/sse"
+	"github.com/trinet2005/oss-go-sdk/pkg/tags"
+	"github.com/trinet2005/oss-mc/pkg/probe"
 )
 
 // assigning mock at runtime instead of compile time

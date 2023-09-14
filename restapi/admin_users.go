@@ -22,17 +22,17 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/trinet2005/oss-console/pkg/utils"
 
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	accountApi "github.com/minio/console/restapi/operations/account"
-	bucketApi "github.com/minio/console/restapi/operations/bucket"
-	userApi "github.com/minio/console/restapi/operations/user"
-	"github.com/minio/madmin-go/v3"
-	iampolicy "github.com/minio/pkg/v2/policy"
+	"github.com/trinet2005/oss-admin-go"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/restapi/operations"
+	accountApi "github.com/trinet2005/oss-console/restapi/operations/account"
+	bucketApi "github.com/trinet2005/oss-console/restapi/operations/bucket"
+	userApi "github.com/trinet2005/oss-console/restapi/operations/user"
+	iampolicy "github.com/trinet2005/oss-pkg/policy"
 )
 
 // Policy evaluated constants

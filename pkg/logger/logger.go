@@ -31,15 +31,15 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/minio/pkg/v2/env"
+	"github.com/trinet2005/oss-pkg/env"
 
-	"github.com/minio/console/pkg"
-	"github.com/minio/pkg/v2/certs"
+	"github.com/trinet2005/oss-console/pkg"
+	"github.com/trinet2005/oss-pkg/certs"
 
-	"github.com/minio/console/pkg/logger/config"
-	"github.com/minio/console/pkg/logger/message/log"
 	"github.com/minio/highwayhash"
-	"github.com/minio/minio-go/v7/pkg/set"
+	"github.com/trinet2005/oss-console/pkg/logger/config"
+	"github.com/trinet2005/oss-console/pkg/logger/message/log"
+	"github.com/trinet2005/oss-go-sdk/pkg/set"
 )
 
 // HighwayHash key for logging in anonymous mode

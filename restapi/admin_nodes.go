@@ -20,9 +20,9 @@ import (
 	"context"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	systemApi "github.com/minio/console/restapi/operations/system"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/restapi/operations"
+	systemApi "github.com/trinet2005/oss-console/restapi/operations/system"
 )
 
 func registerNodesHandler(api *operations.ConsoleAPI) {

@@ -31,12 +31,12 @@ import (
 	"time"
 
 	"github.com/mattn/go-ieproxy"
-	xhttp "github.com/minio/console/pkg/http"
 	"github.com/tidwall/gjson"
+	xhttp "github.com/trinet2005/oss-console/pkg/http"
 
-	"github.com/minio/madmin-go/v3"
-	mc "github.com/minio/mc/cmd"
-	"github.com/minio/pkg/v2/env"
+	"github.com/trinet2005/oss-admin-go"
+	mc "github.com/trinet2005/oss-mc/cmd"
+	"github.com/trinet2005/oss-pkg/env"
 )
 
 const (

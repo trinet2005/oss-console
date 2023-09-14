@@ -24,12 +24,12 @@ import (
 	"os"
 	"testing"
 
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	subnetApi "github.com/minio/console/restapi/operations/subnet"
-	"github.com/minio/madmin-go/v3"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
+	"github.com/trinet2005/oss-admin-go"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/restapi/operations"
+	subnetApi "github.com/trinet2005/oss-console/restapi/operations/subnet"
 )
 
 type AdminSubnetTestSuite struct {

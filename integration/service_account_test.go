@@ -28,8 +28,8 @@ import (
 
 	"github.com/go-openapi/swag"
 
-	iampolicy "github.com/minio/pkg/v2/policy"
 	"github.com/stretchr/testify/assert"
+	iampolicy "github.com/trinet2005/oss-pkg/policy"
 )
 
 func TestAddServiceAccount(t *testing.T) {

@@ -32,10 +32,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth/token"
-	"github.com/minio/minio-go/v7/pkg/credentials"
 	"github.com/secure-io/sio-go/sioutil"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/pkg/auth/token"
+	"github.com/trinet2005/oss-go-sdk/pkg/credentials"
 	"golang.org/x/crypto/chacha20"
 	"golang.org/x/crypto/chacha20poly1305"
 	"golang.org/x/crypto/pbkdf2"

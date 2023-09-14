@@ -23,9 +23,9 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/minio/console/pkg/logger/config"
-	"github.com/minio/console/pkg/logger/target/http"
-	"github.com/minio/pkg/v2/env"
+	"github.com/trinet2005/oss-console/pkg/logger/config"
+	"github.com/trinet2005/oss-console/pkg/logger/target/http"
+	"github.com/trinet2005/oss-pkg/env"
 )
 
 // NewConfig - initialize new logger config.

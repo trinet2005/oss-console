@@ -26,11 +26,11 @@ import (
 
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	inspectApi "github.com/minio/console/restapi/operations/inspect"
-	"github.com/minio/madmin-go/v3"
 	"github.com/secure-io/sio-go"
+	"github.com/trinet2005/oss-admin-go"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/restapi/operations"
+	inspectApi "github.com/trinet2005/oss-console/restapi/operations/inspect"
 )
 
 func registerInspectHandler(api *operations.ConsoleAPI) {

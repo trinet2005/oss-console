@@ -21,6 +21,7 @@ import (
 	"encoding/base64"
 	"errors"
 	"fmt"
+	minio "github.com/trinet2005/oss-go-sdk"
 	"io"
 	"net/http"
 	"net/url"
@@ -31,20 +32,18 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/minio-go/v7"
-
-	"github.com/minio/console/pkg/utils"
+	"github.com/trinet2005/oss-console/pkg/utils"
 
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/klauspost/compress/zip"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	objectApi "github.com/minio/console/restapi/operations/object"
-	mc "github.com/minio/mc/cmd"
-	"github.com/minio/mc/pkg/probe"
-	"github.com/minio/minio-go/v7/pkg/tags"
-	"github.com/minio/pkg/v2/mimedb"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/restapi/operations"
+	objectApi "github.com/trinet2005/oss-console/restapi/operations/object"
+	"github.com/trinet2005/oss-go-sdk/pkg/tags"
+	mc "github.com/trinet2005/oss-mc/cmd"
+	"github.com/trinet2005/oss-mc/pkg/probe"
+	"github.com/trinet2005/oss-pkg/mimedb"
 )
 
 // enum types

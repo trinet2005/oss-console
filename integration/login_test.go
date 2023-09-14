@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/minio/console/models"
+	"github.com/trinet2005/oss-console/models"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -25,22 +25,21 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/minio-go/v7/pkg/replication"
-	"github.com/minio/minio-go/v7/pkg/sse"
-	xnet "github.com/minio/pkg/v2/net"
-
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg"
-	"github.com/minio/console/pkg/auth"
-	"github.com/minio/console/pkg/auth/ldap"
-	xjwt "github.com/minio/console/pkg/auth/token"
-	mc "github.com/minio/mc/cmd"
-	"github.com/minio/mc/pkg/probe"
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/credentials"
-	"github.com/minio/minio-go/v7/pkg/lifecycle"
-	"github.com/minio/minio-go/v7/pkg/notification"
-	"github.com/minio/minio-go/v7/pkg/tags"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/pkg"
+	"github.com/trinet2005/oss-console/pkg/auth"
+	"github.com/trinet2005/oss-console/pkg/auth/ldap"
+	xjwt "github.com/trinet2005/oss-console/pkg/auth/token"
+	minio "github.com/trinet2005/oss-go-sdk"
+	"github.com/trinet2005/oss-go-sdk/pkg/credentials"
+	"github.com/trinet2005/oss-go-sdk/pkg/lifecycle"
+	"github.com/trinet2005/oss-go-sdk/pkg/notification"
+	"github.com/trinet2005/oss-go-sdk/pkg/replication"
+	"github.com/trinet2005/oss-go-sdk/pkg/sse"
+	"github.com/trinet2005/oss-go-sdk/pkg/tags"
+	mc "github.com/trinet2005/oss-mc/cmd"
+	"github.com/trinet2005/oss-mc/pkg/probe"
+	xnet "github.com/trinet2005/oss-pkg/net"
 )
 
 func init() {
@@ -104,7 +103,7 @@ func (c minioClient) RemoveBucketTagging(ctx context.Context, bucketName string)
 
 // implements minio.ListBuckets(ctx)
 func (c minioClient) listBucketsWithContext(ctx context.Context) ([]minio.BucketInfo, error) {
-	return c.client.ListBuckets(ctx)
+	return c.client.ListBuckets(ctx, false)
 }
 
 // implements minio.MakeBucketWithContext(ctx, bucketName, location, objectLocking)

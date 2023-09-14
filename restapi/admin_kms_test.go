@@ -23,11 +23,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	kmsAPI "github.com/minio/console/restapi/operations/k_m_s"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/restapi/operations"
+	kmsAPI "github.com/trinet2005/oss-console/restapi/operations/k_m_s"
 )
 
 type KMSTestSuite struct {

@@ -21,6 +21,7 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	"fmt"
+	madmin "github.com/trinet2005/oss-admin-go"
 	"net/http"
 	"strings"
 
@@ -28,14 +29,13 @@ import (
 
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth"
-	"github.com/minio/console/pkg/auth/idp/oauth2"
-	"github.com/minio/console/restapi/operations"
-	authApi "github.com/minio/console/restapi/operations/auth"
-	"github.com/minio/madmin-go/v3"
-	"github.com/minio/minio-go/v7/pkg/credentials"
-	"github.com/minio/pkg/v2/env"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/pkg/auth"
+	"github.com/trinet2005/oss-console/pkg/auth/idp/oauth2"
+	"github.com/trinet2005/oss-console/restapi/operations"
+	authApi "github.com/trinet2005/oss-console/restapi/operations/auth"
+	"github.com/trinet2005/oss-go-sdk/pkg/credentials"
+	"github.com/trinet2005/oss-pkg/env"
 )
 
 func registerLoginHandlers(api *operations.ConsoleAPI) {

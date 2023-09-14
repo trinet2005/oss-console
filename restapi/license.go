@@ -19,7 +19,7 @@ package restapi
 import (
 	"os"
 
-	"github.com/minio/console/pkg/subnet"
+	"github.com/trinet2005/oss-console/pkg/subnet"
 )
 
 type SubnetPlan int

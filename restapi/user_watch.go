@@ -24,8 +24,8 @@ import (
 	"regexp"
 	"strings"
 
-	mc "github.com/minio/mc/cmd"
 	"github.com/minio/websocket"
+	mc "github.com/trinet2005/oss-mc/cmd"
 )
 
 type watchOptions struct {

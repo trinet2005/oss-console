@@ -22,6 +22,7 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	"fmt"
+	minio "github.com/trinet2005/oss-go-sdk"
 	"log"
 	"math/rand"
 	"net/http"
@@ -29,8 +30,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/trinet2005/oss-go-sdk/pkg/credentials"
 
 	"github.com/stretchr/testify/assert"
 )

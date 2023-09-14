@@ -22,11 +22,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/minio/console/models"
 	"github.com/stretchr/testify/assert"
+	"github.com/trinet2005/oss-console/models"
 
-	bucketApi "github.com/minio/console/restapi/operations/bucket"
-	"github.com/minio/minio-go/v7/pkg/lifecycle"
+	bucketApi "github.com/trinet2005/oss-console/restapi/operations/bucket"
+	"github.com/trinet2005/oss-go-sdk/pkg/lifecycle"
 )
 
 // assigning mock at runtime instead of compile time

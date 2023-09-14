@@ -25,16 +25,16 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/trinet2005/oss-console/pkg/utils"
 
-	xhttp "github.com/minio/console/pkg/http"
+	xhttp "github.com/trinet2005/oss-console/pkg/http"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/subnet"
-	"github.com/minio/console/restapi/operations"
-	subnetApi "github.com/minio/console/restapi/operations/subnet"
-	"github.com/minio/madmin-go/v3"
+	"github.com/trinet2005/oss-admin-go"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/pkg/subnet"
+	"github.com/trinet2005/oss-console/restapi/operations"
+	subnetApi "github.com/trinet2005/oss-console/restapi/operations/subnet"
 )
 
 func registerSubnetHandlers(api *operations.ConsoleAPI) {

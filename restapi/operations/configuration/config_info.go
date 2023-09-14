@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/minio/console/models"
+	"github.com/trinet2005/oss-console/models"
 )
 
 // ConfigInfoHandlerFunc turns a function with the right signature into a config info handler

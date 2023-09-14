@@ -22,9 +22,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/minio/console/models"
-	accountApi "github.com/minio/console/restapi/operations/account"
 	"github.com/stretchr/testify/assert"
+	"github.com/trinet2005/oss-console/models"
+	accountApi "github.com/trinet2005/oss-console/restapi/operations/account"
 )
 
 func Test_getChangePasswordResponse(t *testing.T) {

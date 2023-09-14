@@ -23,14 +23,14 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/minio/console/pkg/http"
+	"github.com/trinet2005/oss-console/pkg/http"
 
-	"github.com/minio/pkg/v2/licverifier"
+	"github.com/trinet2005/oss-pkg/licverifier"
 
-	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
-	mc "github.com/minio/mc/cmd"
 	"github.com/tidwall/gjson"
+	"github.com/trinet2005/oss-admin-go"
+	"github.com/trinet2005/oss-console/models"
+	mc "github.com/trinet2005/oss-mc/cmd"
 )
 
 func LoginWithMFA(client http.ClientI, username, mfaToken, otp string) (*LoginResp, error) {

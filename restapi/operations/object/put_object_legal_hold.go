@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/minio/console/models"
+	"github.com/trinet2005/oss-console/models"
 )
 
 // PutObjectLegalHoldHandlerFunc turns a function with the right signature into a put object legal hold handler

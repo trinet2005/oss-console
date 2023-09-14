@@ -24,13 +24,13 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/trinet2005/oss-console/pkg/utils"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	release "github.com/minio/console/restapi/operations/release"
-	"github.com/minio/pkg/v2/env"
+	"github.com/trinet2005/oss-console/models"
+	"github.com/trinet2005/oss-console/restapi/operations"
+	release "github.com/trinet2005/oss-console/restapi/operations/release"
+	"github.com/trinet2005/oss-pkg/env"
 )
 
 var (

@@ -30,13 +30,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/minio/console/models"
+	"github.com/trinet2005/oss-console/models"
 
 	"github.com/go-openapi/loads"
-	consoleoauth2 "github.com/minio/console/pkg/auth/idp/oauth2"
-	"github.com/minio/console/restapi"
-	"github.com/minio/console/restapi/operations"
 	"github.com/stretchr/testify/assert"
+	consoleoauth2 "github.com/trinet2005/oss-console/pkg/auth/idp/oauth2"
+	"github.com/trinet2005/oss-console/restapi"
+	"github.com/trinet2005/oss-console/restapi/operations"
 )
 
 var token string

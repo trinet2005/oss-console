@@ -21,8 +21,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
+	"github.com/trinet2005/oss-admin-go"
+	"github.com/trinet2005/oss-console/models"
 )
 
 func Test_getCallHomeRule(t *testing.T) {
