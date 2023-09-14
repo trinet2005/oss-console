@@ -1,4 +1,4 @@
-module github.com/minio/console
+module github.com/trinet2005/oss-console
 
 go 1.20
 
@@ -43,6 +43,7 @@ require (
 
 require (
 	github.com/mattn/go-ieproxy v0.0.11
+	github.com/minio/console v0.38.0
 	github.com/minio/pkg/v2 v2.0.1
 )
 
