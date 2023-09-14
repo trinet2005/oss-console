@@ -1,4 +1,4 @@
-module github.com/minio/console
+module github.com/trinet/oss-console
 
 go 1.20
 
